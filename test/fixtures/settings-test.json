@@ -1,0 +1,15 @@
+{
+    "valid": {
+        "workstation": "",
+        "domain": "",
+        "username": "notARealUserName@myfaketenant.onmicrosoft.com",
+        "password": "thisisnotarealpassword",
+        "url": "http://ofs.treasury.gov"
+    },
+    "invalid": {
+        "workstation": "",
+        "domain": "",
+        "username": "thisisarealusername@",
+        "password": "thisistherealpassword"
+    }
+}
