@@ -9,11 +9,11 @@ describe('ntlm-remote-auth', function () {
         before(function () {
 
             //If we're not live, setup the nock from the pre-recorded fixture.
-            // if (!isLive) {
-            //     let nockDefs = postProcessNockFixture("nock-integration.json");
-            //     //  Load the nocks from pre-processed definitions.
-            //     let nocks = nock.define(nockDefs);
-            // }
+            if (!isLive) {
+                let nockDefs = postProcessNockFixture("nock-integration.json");
+                //  Load the nocks from pre-processed definitions.
+                let nocks = nock.define(nockDefs);
+            }
         });
 
         it('should be able to upload a file with authentication', function* () {

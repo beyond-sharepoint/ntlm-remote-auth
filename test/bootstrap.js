@@ -35,7 +35,7 @@ let postProcessNockFixture = function (fixturePath) {
     //Post-process the nock file and replace with values in settings.
     for (let def of nockDefs) {
 
-        if (def.scope === "https://tenant.sharepoint.com:443") {
+        if (def.scope === "http://mysharepointfarm:80") {
             def.scope = global.testSettings.valid.url;
 
             //Supply the current date in the FormDigestValue
@@ -80,7 +80,7 @@ before(function () {
         nock.recorder.rec({
             output_objects: true,
             dont_print: true,
-            enable_reqheaders_recording: true
+            //enable_reqheaders_recording: true
         });
     }
 
