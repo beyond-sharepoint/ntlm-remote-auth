@@ -31,6 +31,21 @@ describe('ntlm-remote-auth', function () {
             expect(result.body.d.__metadata.type).to.equal("SP.File");
         });
 
+        it('should work with non-shortcut functions', function* () {
+            let ctx = yield ntlmRemoteAuth.authenticate(testSettings.valid.url, "", testSettings.valid.domain, testSettings.valid.username, testSettings.valid.password);
+
+            let docLibUrl = "Documents";
+            let fileName = "test1234.txt";
+
+            let result = yield ctx.requestAsync({
+                method: "POST",
+                url: URI.joinPaths("/_api/web/", `GetFolderByServerRelativeUrl('${URI.encode(docLibUrl)}')/`, "files/", `add(url='${URI.encode(fileName)}',overwrite=true)`).href(),
+                body: "Hello, world!"
+            });
+            expect(result.statusCode).to.be.equal(200);
+            expect(result.body.d.__metadata.type).to.equal("SP.File");
+        });
+
         it('should resolve after a non-200 response', function* () {
 
             let ctx = yield ntlmRemoteAuth.authenticate(testSettings.valid.url, "", testSettings.valid.domain, testSettings.valid.username, testSettings.valid.password);
@@ -40,7 +55,7 @@ describe('ntlm-remote-auth', function () {
             let result = yield ctx.request.getAsync({
                 url: URI.joinPaths("/_api/web/", `GetFolderByServerRelativeUrl('${URI.encode(docLibUrl)}')/`).href(),
             });
-            
+
             expect(result.statusCode).to.be.equal(404);
             expect(result.body.error.message.value).to.equal("File Not Found.");
         });

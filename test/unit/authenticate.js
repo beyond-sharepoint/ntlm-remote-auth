@@ -23,6 +23,28 @@ describe('ntlm-remote-auth', function () {
             expect(ntlmRemoteAuth.authenticate).to.be.a("function");
         });
 
+        it('should throw when NTLM authentication is not being used ', function* () {
+            let thrown = false;
+            let message = "";
+
+            try {
+                var result = yield ntlmRemoteAuth.authenticate({
+                    workstation: testSettings.invalid.workstation,
+                    domain: testSettings.invalid.domain,
+                    username: testSettings.invalid.username,
+                    password: testSettings.invalid.password,
+                    tenantDomain: testSettings.invalid.url
+                });
+            }
+            catch (ex) {
+                thrown = true;
+                message = ex.message;
+            }
+
+            expect(thrown).to.be.true;
+            expect(message).to.be.equal("www-authenticate not found on response of second request");
+        });
+
         it('should throw unauthorized with invalid user', function* () {
             let thrown = false;
             let message = "";

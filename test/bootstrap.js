@@ -45,7 +45,7 @@ let postProcessNockFixture = function (fixturePath) {
 
             if (_.startsWith(def.path, "/_api/web/")) {
                 def.options = def.options || {};
-                def.options.filteringRequestBody = function() {
+                def.options.filteringRequestBody = function () {
                     return "*";
                 };
             }
@@ -94,6 +94,52 @@ after(function () {
         mkdirp.sync(path.join(__dirname, "tmp"));
 
         let nockCallObjects = nock.recorder.play();
+
+        for (let callObject of nockCallObjects) {
+            if (callObject.scope === testSettings.valid.url + ":80") {
+                callObject.scope = "http://mysharepointfarm:80";
+
+                if (callObject.body)
+                    callObject.body = "*";
+            }
+
+            if (callObject.headers) {
+                for (let header in callObject.headers) {
+                    let headerLower = header.toLowerCase();
+                    switch (headerLower) {
+                        case "expires":
+                        case "last-modified":
+                        case "date":
+                            delete callObject.headers[header];
+                            break;
+                        case "x-requestdigest":
+                            callObject.headers[header] = "0x12345,{{{currentDate}}}";
+                            break;
+                    }
+                }
+            }
+
+            if (callObject.response) {
+                let formDigestValue = _.get(callObject.response, "d.GetContextWebInformation.FormDigestValue");
+                if (formDigestValue) {
+                    _.set(callObject.response, "d.GetContextWebInformation.FormDigestValue", "0x12345,{{{currentDate}}}");
+                }
+
+                let timeCreated = _.get(callObject.response, "d.TimeCreated")
+                if (timeCreated) {
+                    _.set(callObject.response, "d.TimeCreated", "{{{currentDate}}}");
+                }
+
+                let timeLastModified = _.get(callObject.response, "d.TimeLastModified")
+                if (timeCreated) {
+                    _.set(callObject.response, "d.TimeLastModified", "{{{currentDate}}}");
+                }
+
+                let strResponse = JSON.stringify(callObject.response);
+                strResponse = strResponse.replace(new RegExp(testSettings.valid.url, "g"), "{{{valid.url}}}");
+                callObject.response = JSON.parse(strResponse);
+            }
+        }
 
         fs.writeFileSync(path.join(__dirname, "tmp", argv.recordOutput), JSON.stringify(nockCallObjects, null, 2));
     }

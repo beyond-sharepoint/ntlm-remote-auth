@@ -120,3 +120,14 @@ To override the default record file name, use --recordOutput
 ``` bash
 $ npm test --  --record --live --recordOutput nock-ensureContext.json
 ```
+
+##### Note to self:
+
+When updating the recorded nock fixtures:
+1. Update the scope url to be http://mysharepointfarm:80
+2. Update all urls to {{{valid.url}}} including absoute paths in response bodies
+3. Remove all expires/last-modified/date headers
+4. Change X-RequestDigest responses to be "0x12345,{{{currentDate}}}"
+5. Change response bodies to "*"
+
+this is scripted out in bootstrap.js after(...)

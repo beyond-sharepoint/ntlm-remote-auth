@@ -10,6 +10,7 @@
         "workstation": "",
         "domain": "",
         "username": "thisisarealusername@",
-        "password": "thisistherealpassword"
+        "password": "thisistherealpassword",
+        "url": "http://google.com"
     }
 }
