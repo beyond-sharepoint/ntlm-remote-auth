@@ -103,6 +103,16 @@ after(function () {
                     callObject.body = "*";
             }
 
+            //Rawheaders nonsense.
+            if (callObject.rawHeaders) {
+                callObject.headers = {};
+
+                for(let i = 0; i < callObject.rawHeaders.length; i+=2) {
+                    callObject.headers[callObject.rawHeaders[i].toLowerCase()] = callObject.rawHeaders[i+1];
+                }
+                delete callObject.rawHeaders;
+            }
+
             if (callObject.headers) {
                 for (let header in callObject.headers) {
                     let headerLower = header.toLowerCase();
@@ -117,6 +127,14 @@ after(function () {
                             break;
                     }
                 }
+
+                //The flip-side of the rawheaders nonsense.
+                callObject.rawHeaders = [];
+                for (let header in callObject.headers) {
+                    callObject.rawHeaders.push(header);
+                    callObject.rawHeaders.push(callObject.headers[header]);
+                }
+                delete callObject.headers;
             }
 
             if (callObject.response) {
