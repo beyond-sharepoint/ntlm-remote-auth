@@ -4,7 +4,7 @@
         "domain": "",
         "username": "notARealUserName@myfaketenant.onmicrosoft.com",
         "password": "thisisnotarealpassword",
-        "url": "http://ofs.treasury.gov"
+        "url": "http://myintranetfarm"
     },
     "invalid": {
         "workstation": "",
