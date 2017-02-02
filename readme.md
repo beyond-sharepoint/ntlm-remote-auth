@@ -1,4 +1,6 @@
-[![CircleCI](https://circleci.com/gh/beyond-sharepoint/ntlm-remote-auth.svg?style=svg)](https://circleci.com/gh/beyond-sharepoint/ntlm-remote-auth)      [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000) [![David](https://david-dm.org/beyond-sharepoint/ntlm-remote-auth.svg)]()
+[![CircleCI](https://circleci.com/gh/beyond-sharepoint/ntlm-remote-auth.svg?style=svg)](https://circleci.com/gh/beyond-sharepoint/ntlm-remote-auth)
+![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)
+![David](https://david-dm.org/beyond-sharepoint/ntlm-remote-auth.svg)
 
 @beyond-sharepoint/ntlm-remote-auth
 ---
@@ -9,7 +11,7 @@ To use, simply import the module and supply the tenant url and credentials.
 ``` js
 const sp = require("@beyond-sharepoint/ntlm-remote-auth");
 
-sp.authenticate("mysharepointfarm", "myusername@mydomain.com", "mypassword")
+sp.authenticate("mysharepointfarm", "myworkstation", "mydomain", "myusername", "mypassword")
     .then(function(ctx) {
         console.log("Success!!");
     }, function() {
@@ -39,7 +41,7 @@ For instance, to upload a file to a document library:
 const sp = require("@beyond-sharepoint/ntlm-remote-auth");
 const URI = require("urijs");
 
-sp.authenticate("mysharepointfarm", "myusername@mytenantname.onmicrosoft.com", "mypassword")
+sp.authenticate("mysharepointfarm", "myworkstation", "mydomain", "myusername", "mypassword")
     .then(function(ctx) {
         //upload a file to 'documents' library.
 
