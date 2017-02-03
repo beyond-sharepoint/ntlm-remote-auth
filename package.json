@@ -1,8 +1,8 @@
 {
   "name": "@beyond-sharepoint/ntlm-remote-auth",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Provides a NTLM authentication implementation for SharePoint on-prem",
-  "main": "/lib/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha",
     "record-all": "npm run record-authenticate && npm run record-ensureContextInfo && npm run record-integration",
