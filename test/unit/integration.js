@@ -59,5 +59,12 @@ describe('ntlm-remote-auth', function () {
             expect(result.statusCode).to.be.equal(404);
             expect(result.body.error.message.value).to.equal("File Not Found.");
         });
+
+        it('should allow multiple independent in-flight authentication requests', function* () {
+            let ctx1 = yield ntlmRemoteAuth.authenticate(testSettings.valid.url, "", testSettings.valid.domain, testSettings.valid.username, testSettings.valid.password);
+            let ctx2 = yield ntlmRemoteAuth.authenticate(testSettings.valid.url, "", testSettings.valid.domain, testSettings.valid.username, testSettings.valid.password);
+
+            expect(ctx1.contextInfo != ctx2.contextInfo);
+        });
     });
 });
