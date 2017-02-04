@@ -29,7 +29,6 @@
   "homepage": "https://github.com/beyond-sharepoint/ntlm-remote-auth#readme",
   "dependencies": {
     "bluebird": "^3.4.7",
-    "bluebird-co": "^2.2.0",
     "lodash": "^4.17.4",
     "moment": "^2.17.1",
     "request": "^2.79.0"
