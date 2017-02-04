@@ -64,7 +64,36 @@ describe('ntlm-remote-auth', function () {
             let ctx1 = yield ntlmRemoteAuth.authenticate(testSettings.valid.url, "", testSettings.valid.domain, testSettings.valid.username, testSettings.valid.password);
             let ctx2 = yield ntlmRemoteAuth.authenticate(testSettings.valid.url, "", testSettings.valid.domain, testSettings.valid.username, testSettings.valid.password);
 
-            expect(ctx1.contextInfo != ctx2.contextInfo);
+            expect(ctx1.contextInfo).to.not.equal(ctx2.contextInfo);
         });
+
+        // it('should allow using request events.', function (done) {
+        //     ntlmRemoteAuth.authenticate(testSettings.valid.url, "", testSettings.valid.domain, testSettings.valid.username, testSettings.valid.password)
+        //         .then(function (ctx) {
+
+        //             let docLibUrl = "Documents";
+        //             let fileName = "test2141.txt";
+
+        //             let uploadRequestPromise = ctx.request({
+        //                 method: "POST",
+        //                 url: URI.joinPaths("/_api/web/", `GetFolderByServerRelativeUrl('${URI.encode(docLibUrl)}')/`, "files/", `add(url='${URI.encode(fileName)}',overwrite=true)`).href(),
+        //                 body: "Hello, world!"
+        //             }).then(function (uploadRequest) {
+        //                 uploadRequest.body = "foo";
+        //                 uploadRequest.callback = function (res) {
+        //                     console.log("asdfasdfasdf");
+        //                 };
+        //                 uploadRequest.on("response", function () {
+        //                     called = true;
+        //                     console.log("asdf");
+        //                     done();
+        //                 }).on('data', function (data) {
+        //                     // decompressed data as it is received
+        //                     console.log('decoded chunk: ' + data)
+        //                 })
+        //                 console.log(typeof uploadRequest);
+        //             }).then(function(response) { console.log(response); done(); });
+        //         });
+        // });
     });
 });

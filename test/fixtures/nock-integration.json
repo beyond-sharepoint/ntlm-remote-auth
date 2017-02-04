@@ -1,7 +1,7 @@
 [
   {
     "scope": "http://mysharepointfarm:80",
-    "method": "GET",
+    "method": "POST",
     "path": "/_api/contextinfo",
     "body": "",
     "status": 401,
@@ -10,11 +10,11 @@
       "server",
       "Microsoft-IIS/8.5",
       "www-authenticate",
-      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiTXEjjReLoGQAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgA5WQAbO9+0gEAAAAA",
+      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomi/2+I4CnHlsQAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgAzmjd1xN/0gEAAAAA",
       "sprequestguid",
-      "c6b9d19d-dfd8-b05e-6d1f-c8b60b58824f",
+      "b1c8d19d-cfe6-b05e-6d1f-c0290f09d04e",
       "request-id",
-      "c6b9d19d-dfd8-b05e-6d1f-c8b60b58824f",
+      "b1c8d19d-cfe6-b05e-6d1f-c0290f09d04e",
       "x-frame-options",
       "SAMEORIGIN",
       "sprequestduration",
@@ -78,9 +78,9 @@
       "x-aspnet-version",
       "4.0.30319",
       "sprequestguid",
-      "c6b9d19d-dfd9-b05e-6d1f-c2dabfeae805",
+      "b1c8d19d-bfe7-b05e-6d1f-c37bf7f68f04",
       "request-id",
-      "c6b9d19d-dfd9-b05e-6d1f-c2dabfeae805",
+      "b1c8d19d-bfe7-b05e-6d1f-c37bf7f68f04",
       "x-frame-options",
       "SAMEORIGIN",
       "persistent-auth",
@@ -99,7 +99,7 @@
   },
   {
     "scope": "http://mysharepointfarm:80",
-    "method": "GET",
+    "method": "post",
     "path": "/_api/web/GetFolderByServerRelativeUrl%28%27Documents%27%29/files/add%28url=%27test1234.txt%27,overwrite=true%29",
     "body": "*",
     "status": 401,
@@ -108,11 +108,11 @@
       "server",
       "Microsoft-IIS/8.5",
       "www-authenticate",
-      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiCECo2y+F3iIAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgA2KQGbO9+0gEAAAAA",
+      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomi3q//dePI+cIAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgAja3j1xN/0gEAAAAA",
       "sprequestguid",
-      "c6b9d19d-6fdb-b05e-6d1f-c8dfbb156a6d",
+      "b1c8d19d-4fe9-b05e-6d1f-cfe4a02bf746",
       "request-id",
-      "c6b9d19d-6fdb-b05e-6d1f-c8dfbb156a6d",
+      "b1c8d19d-4fe9-b05e-6d1f-cfe4a02bf746",
       "x-frame-options",
       "SAMEORIGIN",
       "sprequestduration",
@@ -133,7 +133,7 @@
   },
   {
     "scope": "http://mysharepointfarm:80",
-    "method": "POST",
+    "method": "post",
     "path": "/_api/web/GetFolderByServerRelativeUrl%28%27Documents%27%29/files/add%28url=%27test1234.txt%27,overwrite=true%29",
     "body": "*",
     "status": 200,
@@ -176,240 +176,9 @@
         },
         "CheckInComment": "",
         "CheckOutType": 2,
-        "ContentTag": "{60DF07AC-422B-44A3-B53C-B91DD7CFD88B},113,113",
+        "ContentTag": "{60DF07AC-422B-44A3-B53C-B91DD7CFD88B},297,297",
         "CustomizedPageStatus": 0,
-        "ETag": "\"{60DF07AC-422B-44A3-B53C-B91DD7CFD88B},113\"",
-        "Exists": true,
-        "Length": "15",
-        "Level": 1,
-        "MajorVersion": 1,
-        "MinorVersion": 0,
-        "Name": "test1234.txt",
-        "ServerRelativeUrl": "/Documents/test1234.txt",
-        "TimeCreated": "{{{currentDate}}}",
-        "TimeLastModified": "{{{currentDate}}}",
-        "Title": null,
-        "UIVersion": 512,
-        "UIVersionLabel": "1.0"
-      }
-    },
-    "rawHeaders": [
-      "cache-control",
-      "private, max-age=0",
-      "transfer-encoding",
-      "chunked",
-      "content-type",
-      "application/json;odata=verbose;charset=utf-8",
-      "server",
-      "Microsoft-IIS/8.5",
-      "x-sharepointhealthscore",
-      "0",
-      "spclientservicerequestduration",
-      "25",
-      "x-aspnet-version",
-      "4.0.30319",
-      "sprequestguid",
-      "c6b9d19d-bfdb-b05e-6d1f-cd016484bd6b",
-      "request-id",
-      "c6b9d19d-bfdb-b05e-6d1f-cd016484bd6b",
-      "x-requestdigest",
-      "0x12345,{{{currentDate}}}",
-      "x-frame-options",
-      "SAMEORIGIN",
-      "persistent-auth",
-      "true",
-      "x-powered-by",
-      "ASP.NET",
-      "microsoftsharepointteamservices",
-      "15.0.0.4797",
-      "x-content-type-options",
-      "nosniff",
-      "x-ms-invokeapp",
-      "1; RequireReadOnly",
-      "connection",
-      "close"
-    ]
-  },
-  {
-    "scope": "http://mysharepointfarm:80",
-    "method": "GET",
-    "path": "/_api/contextinfo",
-    "body": "",
-    "status": 401,
-    "response": "",
-    "rawHeaders": [
-      "server",
-      "Microsoft-IIS/8.5",
-      "www-authenticate",
-      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiXiqyDGHSnQMAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgAgw0NbO9+0gEAAAAA",
-      "sprequestguid",
-      "c6b9d19d-ffdd-b05e-6d1f-c0325c9ae7a5",
-      "request-id",
-      "c6b9d19d-ffdd-b05e-6d1f-c0325c9ae7a5",
-      "x-frame-options",
-      "SAMEORIGIN",
-      "sprequestduration",
-      "1",
-      "spiislatency",
-      "0",
-      "x-powered-by",
-      "ASP.NET",
-      "microsoftsharepointteamservices",
-      "15.0.0.4797",
-      "x-content-type-options",
-      "nosniff",
-      "x-ms-invokeapp",
-      "1; RequireReadOnly",
-      "content-length",
-      "0"
-    ]
-  },
-  {
-    "scope": "http://mysharepointfarm:80",
-    "method": "POST",
-    "path": "/_api/contextinfo",
-    "body": "",
-    "status": 200,
-    "response": {
-      "d": {
-        "GetContextWebInformation": {
-          "__metadata": {
-            "type": "SP.ContextWebInformation"
-          },
-          "FormDigestTimeoutSeconds": 1800,
-          "FormDigestValue": "0x12345,{{{currentDate}}}",
-          "LibraryVersion": "15.0.4841.1000",
-          "SiteFullUrl": "{{{valid.url}}}",
-          "SupportedSchemaVersions": {
-            "__metadata": {
-              "type": "Collection(Edm.String)"
-            },
-            "results": [
-              "14.0.0.0",
-              "15.0.0.0"
-            ]
-          },
-          "WebFullUrl": "{{{valid.url}}}"
-        }
-      }
-    },
-    "rawHeaders": [
-      "cache-control",
-      "private, max-age=0",
-      "transfer-encoding",
-      "chunked",
-      "content-type",
-      "application/json;odata=verbose;charset=utf-8",
-      "server",
-      "Microsoft-IIS/8.5",
-      "x-sharepointhealthscore",
-      "0",
-      "spclientservicerequestduration",
-      "3",
-      "x-aspnet-version",
-      "4.0.30319",
-      "sprequestguid",
-      "c6b9d19d-3fde-b05e-6d1f-c49e2a97a620",
-      "request-id",
-      "c6b9d19d-3fde-b05e-6d1f-c49e2a97a620",
-      "x-frame-options",
-      "SAMEORIGIN",
-      "persistent-auth",
-      "true",
-      "x-powered-by",
-      "ASP.NET",
-      "microsoftsharepointteamservices",
-      "15.0.0.4797",
-      "x-content-type-options",
-      "nosniff",
-      "x-ms-invokeapp",
-      "1; RequireReadOnly",
-      "connection",
-      "close"
-    ]
-  },
-  {
-    "scope": "http://mysharepointfarm:80",
-    "method": "GET",
-    "path": "/_api/web/GetFolderByServerRelativeUrl%28%27Documents%27%29/files/add%28url=%27test1234.txt%27,overwrite=true%29",
-    "body": "*",
-    "status": 401,
-    "response": "",
-    "rawHeaders": [
-      "server",
-      "Microsoft-IIS/8.5",
-      "www-authenticate",
-      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiMbQ6ibw3HfUAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgAeKUPbO9+0gEAAAAA",
-      "sprequestguid",
-      "c6b9d19d-1fdf-b05e-6d1f-caada544eb54",
-      "request-id",
-      "c6b9d19d-1fdf-b05e-6d1f-caada544eb54",
-      "x-frame-options",
-      "SAMEORIGIN",
-      "sprequestduration",
-      "1",
-      "spiislatency",
-      "0",
-      "x-powered-by",
-      "ASP.NET",
-      "microsoftsharepointteamservices",
-      "15.0.0.4797",
-      "x-content-type-options",
-      "nosniff",
-      "x-ms-invokeapp",
-      "1; RequireReadOnly",
-      "content-length",
-      "0"
-    ]
-  },
-  {
-    "scope": "http://mysharepointfarm:80",
-    "method": "POST",
-    "path": "/_api/web/GetFolderByServerRelativeUrl%28%27Documents%27%29/files/add%28url=%27test1234.txt%27,overwrite=true%29",
-    "body": "*",
-    "status": 200,
-    "response": {
-      "d": {
-        "__metadata": {
-          "id": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')",
-          "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')",
-          "type": "SP.File"
-        },
-        "Author": {
-          "__deferred": {
-            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/Author"
-          }
-        },
-        "CheckedOutByUser": {
-          "__deferred": {
-            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/CheckedOutByUser"
-          }
-        },
-        "ListItemAllFields": {
-          "__deferred": {
-            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/ListItemAllFields"
-          }
-        },
-        "LockedByUser": {
-          "__deferred": {
-            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/LockedByUser"
-          }
-        },
-        "ModifiedBy": {
-          "__deferred": {
-            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/ModifiedBy"
-          }
-        },
-        "Versions": {
-          "__deferred": {
-            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/Versions"
-          }
-        },
-        "CheckInComment": "",
-        "CheckOutType": 2,
-        "ContentTag": "{60DF07AC-422B-44A3-B53C-B91DD7CFD88B},114,114",
-        "CustomizedPageStatus": 0,
-        "ETag": "\"{60DF07AC-422B-44A3-B53C-B91DD7CFD88B},114\"",
+        "ETag": "\"{60DF07AC-422B-44A3-B53C-B91DD7CFD88B},297\"",
         "Exists": true,
         "Length": "15",
         "Level": 1,
@@ -440,9 +209,9 @@
       "x-aspnet-version",
       "4.0.30319",
       "sprequestguid",
-      "c6b9d19d-7fdf-b05e-6d1f-caad72b788c6",
+      "b1c8d19d-afe9-b05e-6d1f-c4ec000b4ad7",
       "request-id",
-      "c6b9d19d-7fdf-b05e-6d1f-caad72b788c6",
+      "b1c8d19d-afe9-b05e-6d1f-c4ec000b4ad7",
       "x-requestdigest",
       "0x12345,{{{currentDate}}}",
       "x-frame-options",
@@ -463,7 +232,7 @@
   },
   {
     "scope": "http://mysharepointfarm:80",
-    "method": "GET",
+    "method": "POST",
     "path": "/_api/contextinfo",
     "body": "",
     "status": 401,
@@ -472,11 +241,11 @@
       "server",
       "Microsoft-IIS/8.5",
       "www-authenticate",
-      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomi6zple3c3c5wAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgAHQ4WbO9+0gEAAAAA",
+      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiaobacWwZGcsAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgAizjq1xN/0gEAAAAA",
       "sprequestguid",
-      "c6b9d19d-bfe1-b05e-6d1f-cc086401172d",
+      "b1c8d19d-0fec-b05e-6d1f-c733f4e815c0",
       "request-id",
-      "c6b9d19d-bfe1-b05e-6d1f-cc086401172d",
+      "b1c8d19d-0fec-b05e-6d1f-c733f4e815c0",
       "x-frame-options",
       "SAMEORIGIN",
       "sprequestduration",
@@ -540,9 +309,9 @@
       "x-aspnet-version",
       "4.0.30319",
       "sprequestguid",
-      "c6b9d19d-ffe1-b05e-6d1f-c2443108b918",
+      "b1c8d19d-4fec-b05e-6d1f-c0c088d57e9b",
       "request-id",
-      "c6b9d19d-ffe1-b05e-6d1f-c2443108b918",
+      "b1c8d19d-4fec-b05e-6d1f-c0c088d57e9b",
       "x-frame-options",
       "SAMEORIGIN",
       "persistent-auth",
@@ -561,8 +330,141 @@
   },
   {
     "scope": "http://mysharepointfarm:80",
-    "method": "GET",
-    "path": "/_api/web/GetFolderByServerRelativeUrl%28%27FooBarDirThatDoesntExist%27%29/",
+    "method": "POST",
+    "path": "/_api/web/GetFolderByServerRelativeUrl%28%27Documents%27%29/files/add%28url=%27test1234.txt%27,overwrite=true%29",
+    "body": "*",
+    "status": 401,
+    "response": "",
+    "rawHeaders": [
+      "server",
+      "Microsoft-IIS/8.5",
+      "www-authenticate",
+      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiFHvertYoiy8AAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgATR/t1xN/0gEAAAAA",
+      "sprequestguid",
+      "b1c8d19d-3fed-b05e-6d1f-cf1a4540f49e",
+      "request-id",
+      "b1c8d19d-3fed-b05e-6d1f-cf1a4540f49e",
+      "x-frame-options",
+      "SAMEORIGIN",
+      "sprequestduration",
+      "1",
+      "spiislatency",
+      "0",
+      "x-powered-by",
+      "ASP.NET",
+      "microsoftsharepointteamservices",
+      "15.0.0.4797",
+      "x-content-type-options",
+      "nosniff",
+      "x-ms-invokeapp",
+      "1; RequireReadOnly",
+      "content-length",
+      "0"
+    ]
+  },
+  {
+    "scope": "http://mysharepointfarm:80",
+    "method": "POST",
+    "path": "/_api/web/GetFolderByServerRelativeUrl%28%27Documents%27%29/files/add%28url=%27test1234.txt%27,overwrite=true%29",
+    "body": "*",
+    "status": 200,
+    "response": {
+      "d": {
+        "__metadata": {
+          "id": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')",
+          "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')",
+          "type": "SP.File"
+        },
+        "Author": {
+          "__deferred": {
+            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/Author"
+          }
+        },
+        "CheckedOutByUser": {
+          "__deferred": {
+            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/CheckedOutByUser"
+          }
+        },
+        "ListItemAllFields": {
+          "__deferred": {
+            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/ListItemAllFields"
+          }
+        },
+        "LockedByUser": {
+          "__deferred": {
+            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/LockedByUser"
+          }
+        },
+        "ModifiedBy": {
+          "__deferred": {
+            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/ModifiedBy"
+          }
+        },
+        "Versions": {
+          "__deferred": {
+            "uri": "{{{valid.url}}}/_api/Web/GetFileByServerRelativeUrl('/Documents/test1234.txt')/Versions"
+          }
+        },
+        "CheckInComment": "",
+        "CheckOutType": 2,
+        "ContentTag": "{60DF07AC-422B-44A3-B53C-B91DD7CFD88B},298,298",
+        "CustomizedPageStatus": 0,
+        "ETag": "\"{60DF07AC-422B-44A3-B53C-B91DD7CFD88B},298\"",
+        "Exists": true,
+        "Length": "15",
+        "Level": 1,
+        "MajorVersion": 1,
+        "MinorVersion": 0,
+        "Name": "test1234.txt",
+        "ServerRelativeUrl": "/Documents/test1234.txt",
+        "TimeCreated": "{{{currentDate}}}",
+        "TimeLastModified": "{{{currentDate}}}",
+        "Title": null,
+        "UIVersion": 512,
+        "UIVersionLabel": "1.0"
+      }
+    },
+    "rawHeaders": [
+      "cache-control",
+      "private, max-age=0",
+      "transfer-encoding",
+      "chunked",
+      "content-type",
+      "application/json;odata=verbose;charset=utf-8",
+      "server",
+      "Microsoft-IIS/8.5",
+      "x-sharepointhealthscore",
+      "0",
+      "spclientservicerequestduration",
+      "26",
+      "x-aspnet-version",
+      "4.0.30319",
+      "sprequestguid",
+      "b1c8d19d-7fed-b05e-6d1f-cf92d08c590b",
+      "request-id",
+      "b1c8d19d-7fed-b05e-6d1f-cf92d08c590b",
+      "x-requestdigest",
+      "0x12345,{{{currentDate}}}",
+      "x-frame-options",
+      "SAMEORIGIN",
+      "persistent-auth",
+      "true",
+      "x-powered-by",
+      "ASP.NET",
+      "microsoftsharepointteamservices",
+      "15.0.0.4797",
+      "x-content-type-options",
+      "nosniff",
+      "x-ms-invokeapp",
+      "1; RequireReadOnly",
+      "connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "http://mysharepointfarm:80",
+    "method": "POST",
+    "path": "/_api/contextinfo",
     "body": "",
     "status": 401,
     "response": "",
@@ -570,11 +472,11 @@
       "server",
       "Microsoft-IIS/8.5",
       "www-authenticate",
-      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiHYLvuhIEgjQAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgATs0YbO9+0gEAAAAA",
+      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiUeCnjvVhdasAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgAtOry1xN/0gEAAAAA",
       "sprequestguid",
-      "c6b9d19d-dfe2-b05e-6d1f-c668cbd011a5",
+      "b1c8d19d-9fef-b05e-6d1f-cc19efd245e9",
       "request-id",
-      "c6b9d19d-dfe2-b05e-6d1f-c668cbd011a5",
+      "b1c8d19d-9fef-b05e-6d1f-cc19efd245e9",
       "x-frame-options",
       "SAMEORIGIN",
       "sprequestduration",
@@ -595,7 +497,105 @@
   },
   {
     "scope": "http://mysharepointfarm:80",
-    "method": "GET",
+    "method": "POST",
+    "path": "/_api/contextinfo",
+    "body": "",
+    "status": 200,
+    "response": {
+      "d": {
+        "GetContextWebInformation": {
+          "__metadata": {
+            "type": "SP.ContextWebInformation"
+          },
+          "FormDigestTimeoutSeconds": 1800,
+          "FormDigestValue": "0x12345,{{{currentDate}}}",
+          "LibraryVersion": "15.0.4841.1000",
+          "SiteFullUrl": "{{{valid.url}}}",
+          "SupportedSchemaVersions": {
+            "__metadata": {
+              "type": "Collection(Edm.String)"
+            },
+            "results": [
+              "14.0.0.0",
+              "15.0.0.0"
+            ]
+          },
+          "WebFullUrl": "{{{valid.url}}}"
+        }
+      }
+    },
+    "rawHeaders": [
+      "cache-control",
+      "private, max-age=0",
+      "transfer-encoding",
+      "chunked",
+      "content-type",
+      "application/json;odata=verbose;charset=utf-8",
+      "server",
+      "Microsoft-IIS/8.5",
+      "x-sharepointhealthscore",
+      "0",
+      "spclientservicerequestduration",
+      "3",
+      "x-aspnet-version",
+      "4.0.30319",
+      "sprequestguid",
+      "b1c8d19d-dfef-b05e-6d1f-cfc94ba8f692",
+      "request-id",
+      "b1c8d19d-dfef-b05e-6d1f-cfc94ba8f692",
+      "x-frame-options",
+      "SAMEORIGIN",
+      "persistent-auth",
+      "true",
+      "x-powered-by",
+      "ASP.NET",
+      "microsoftsharepointteamservices",
+      "15.0.0.4797",
+      "x-content-type-options",
+      "nosniff",
+      "x-ms-invokeapp",
+      "1; RequireReadOnly",
+      "connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "http://mysharepointfarm:80",
+    "method": "get",
+    "path": "/_api/web/GetFolderByServerRelativeUrl%28%27FooBarDirThatDoesntExist%27%29/",
+    "body": "",
+    "status": 401,
+    "response": "",
+    "rawHeaders": [
+      "server",
+      "Microsoft-IIS/8.5",
+      "www-authenticate",
+      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiXZWoAqfxTX0AAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgAZ4T11xN/0gEAAAAA",
+      "sprequestguid",
+      "b1c8d19d-aff0-b05e-6d1f-c51fbaa7e6b4",
+      "request-id",
+      "b1c8d19d-aff0-b05e-6d1f-c51fbaa7e6b4",
+      "x-frame-options",
+      "SAMEORIGIN",
+      "sprequestduration",
+      "1",
+      "spiislatency",
+      "0",
+      "x-powered-by",
+      "ASP.NET",
+      "microsoftsharepointteamservices",
+      "15.0.0.4797",
+      "x-content-type-options",
+      "nosniff",
+      "x-ms-invokeapp",
+      "1; RequireReadOnly",
+      "content-length",
+      "0"
+    ]
+  },
+  {
+    "scope": "http://mysharepointfarm:80",
+    "method": "get",
     "path": "/_api/web/GetFolderByServerRelativeUrl%28%27FooBarDirThatDoesntExist%27%29/",
     "body": "",
     "status": 404,
@@ -624,9 +624,9 @@
       "x-aspnet-version",
       "4.0.30319",
       "sprequestguid",
-      "c6b9d19d-0fe3-b05e-6d1f-cd264b67e324",
+      "b1c8d19d-fff0-b05e-6d1f-cccf69092234",
       "request-id",
-      "c6b9d19d-0fe3-b05e-6d1f-cd264b67e324",
+      "b1c8d19d-fff0-b05e-6d1f-cccf69092234",
       "x-frame-options",
       "SAMEORIGIN",
       "persistent-auth",
@@ -645,7 +645,7 @@
   },
   {
     "scope": "http://mysharepointfarm:80",
-    "method": "GET",
+    "method": "POST",
     "path": "/_api/contextinfo",
     "body": "",
     "status": 401,
@@ -654,11 +654,109 @@
       "server",
       "Microsoft-IIS/8.5",
       "www-authenticate",
-      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiQSiQRYLEYIcAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgAt2cbbO9+0gEAAAAA",
+      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomi5BovbdeR9PIAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgA5o/41xN/0gEAAAAA",
       "sprequestguid",
-      "c6b9d19d-efe3-b05e-6d1f-c48d2c5d0590",
+      "b1c8d19d-eff1-b05e-6d1f-ca670f7a2635",
       "request-id",
-      "c6b9d19d-efe3-b05e-6d1f-c48d2c5d0590",
+      "b1c8d19d-eff1-b05e-6d1f-ca670f7a2635",
+      "x-frame-options",
+      "SAMEORIGIN",
+      "sprequestduration",
+      "0",
+      "spiislatency",
+      "0",
+      "x-powered-by",
+      "ASP.NET",
+      "microsoftsharepointteamservices",
+      "15.0.0.4797",
+      "x-content-type-options",
+      "nosniff",
+      "x-ms-invokeapp",
+      "1; RequireReadOnly",
+      "content-length",
+      "0"
+    ]
+  },
+  {
+    "scope": "http://mysharepointfarm:80",
+    "method": "POST",
+    "path": "/_api/contextinfo",
+    "body": "",
+    "status": 200,
+    "response": {
+      "d": {
+        "GetContextWebInformation": {
+          "__metadata": {
+            "type": "SP.ContextWebInformation"
+          },
+          "FormDigestTimeoutSeconds": 1800,
+          "FormDigestValue": "0x12345,{{{currentDate}}}",
+          "LibraryVersion": "15.0.4841.1000",
+          "SiteFullUrl": "{{{valid.url}}}",
+          "SupportedSchemaVersions": {
+            "__metadata": {
+              "type": "Collection(Edm.String)"
+            },
+            "results": [
+              "14.0.0.0",
+              "15.0.0.0"
+            ]
+          },
+          "WebFullUrl": "{{{valid.url}}}"
+        }
+      }
+    },
+    "rawHeaders": [
+      "cache-control",
+      "private, max-age=0",
+      "transfer-encoding",
+      "chunked",
+      "content-type",
+      "application/json;odata=verbose;charset=utf-8",
+      "server",
+      "Microsoft-IIS/8.5",
+      "x-sharepointhealthscore",
+      "0",
+      "spclientservicerequestduration",
+      "4",
+      "x-aspnet-version",
+      "4.0.30319",
+      "sprequestguid",
+      "b1c8d19d-3ff2-b05e-6d1f-c691ecb456d7",
+      "request-id",
+      "b1c8d19d-3ff2-b05e-6d1f-c691ecb456d7",
+      "x-frame-options",
+      "SAMEORIGIN",
+      "persistent-auth",
+      "true",
+      "x-powered-by",
+      "ASP.NET",
+      "microsoftsharepointteamservices",
+      "15.0.0.4797",
+      "x-content-type-options",
+      "nosniff",
+      "x-ms-invokeapp",
+      "1; RequireReadOnly",
+      "connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "http://mysharepointfarm:80",
+    "method": "POST",
+    "path": "/_api/contextinfo",
+    "body": "",
+    "status": 401,
+    "response": "",
+    "rawHeaders": [
+      "server",
+      "Microsoft-IIS/8.5",
+      "www-authenticate",
+      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomiZV7NFejnSggAAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgADjv81xN/0gEAAAAA",
+      "sprequestguid",
+      "b1c8d19d-5ff3-b05e-6d1f-c4a2e2611f83",
+      "request-id",
+      "b1c8d19d-5ff3-b05e-6d1f-c4a2e2611f83",
       "x-frame-options",
       "SAMEORIGIN",
       "sprequestduration",
@@ -722,107 +820,9 @@
       "x-aspnet-version",
       "4.0.30319",
       "sprequestguid",
-      "c6b9d19d-1fe4-b05e-6d1f-c5f658136380",
+      "b1c8d19d-9ff3-b05e-6d1f-c982fc2c5f8c",
       "request-id",
-      "c6b9d19d-1fe4-b05e-6d1f-c5f658136380",
-      "x-frame-options",
-      "SAMEORIGIN",
-      "persistent-auth",
-      "true",
-      "x-powered-by",
-      "ASP.NET",
-      "microsoftsharepointteamservices",
-      "15.0.0.4797",
-      "x-content-type-options",
-      "nosniff",
-      "x-ms-invokeapp",
-      "1; RequireReadOnly",
-      "connection",
-      "close"
-    ]
-  },
-  {
-    "scope": "http://mysharepointfarm:80",
-    "method": "GET",
-    "path": "/_api/contextinfo",
-    "body": "",
-    "status": 401,
-    "response": "",
-    "rawHeaders": [
-      "server",
-      "Microsoft-IIS/8.5",
-      "www-authenticate",
-      "NTLM TlRMTVNTUAACAAAAEAAQADgAAAAFgomi7Zt5DhatAC4AAAAAAAAAAKIAogBIAAAABgOAJQAAAA9UAFIARQBBAFMAVQBSAFkAAgAQAFQAUgBFAEEAUwBVAFIAWQABABIAUwBQADIAMAAxADMARABFAFYABAAYAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAMALABTAFAAMgAwADEAMwBEAGUAdgAuAHQAcgBlAGEAcwB1AHIAeQAuAGcAbwB2AAUAGAB0AHIAZQBhAHMAdQByAHkALgBnAG8AdgAHAAgAzK8dbO9+0gEAAAAA",
-      "sprequestguid",
-      "c6b9d19d-dfe4-b05e-6d1f-ce7e5688883b",
-      "request-id",
-      "c6b9d19d-dfe4-b05e-6d1f-ce7e5688883b",
-      "x-frame-options",
-      "SAMEORIGIN",
-      "sprequestduration",
-      "0",
-      "spiislatency",
-      "0",
-      "x-powered-by",
-      "ASP.NET",
-      "microsoftsharepointteamservices",
-      "15.0.0.4797",
-      "x-content-type-options",
-      "nosniff",
-      "x-ms-invokeapp",
-      "1; RequireReadOnly",
-      "content-length",
-      "0"
-    ]
-  },
-  {
-    "scope": "http://mysharepointfarm:80",
-    "method": "POST",
-    "path": "/_api/contextinfo",
-    "body": "",
-    "status": 200,
-    "response": {
-      "d": {
-        "GetContextWebInformation": {
-          "__metadata": {
-            "type": "SP.ContextWebInformation"
-          },
-          "FormDigestTimeoutSeconds": 1800,
-          "FormDigestValue": "0x12345,{{{currentDate}}}",
-          "LibraryVersion": "15.0.4841.1000",
-          "SiteFullUrl": "{{{valid.url}}}",
-          "SupportedSchemaVersions": {
-            "__metadata": {
-              "type": "Collection(Edm.String)"
-            },
-            "results": [
-              "14.0.0.0",
-              "15.0.0.0"
-            ]
-          },
-          "WebFullUrl": "{{{valid.url}}}"
-        }
-      }
-    },
-    "rawHeaders": [
-      "cache-control",
-      "private, max-age=0",
-      "transfer-encoding",
-      "chunked",
-      "content-type",
-      "application/json;odata=verbose;charset=utf-8",
-      "server",
-      "Microsoft-IIS/8.5",
-      "x-sharepointhealthscore",
-      "0",
-      "spclientservicerequestduration",
-      "3",
-      "x-aspnet-version",
-      "4.0.30319",
-      "sprequestguid",
-      "c6b9d19d-ffe4-b05e-6d1f-c444e7203cbc",
-      "request-id",
-      "c6b9d19d-ffe4-b05e-6d1f-c444e7203cbc",
+      "b1c8d19d-9ff3-b05e-6d1f-c982fc2c5f8c",
       "x-frame-options",
       "SAMEORIGIN",
       "persistent-auth",
