@@ -1,6 +1,6 @@
 {
   "name": "@beyond-sharepoint/ntlm-remote-auth",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Provides a NTLM authentication implementation for SharePoint on-prem",
   "main": "./lib/index.js",
   "scripts": {
