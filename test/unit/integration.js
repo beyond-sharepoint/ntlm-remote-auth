@@ -67,33 +67,23 @@ describe('ntlm-remote-auth', function () {
             expect(ctx1.contextInfo).to.not.equal(ctx2.contextInfo);
         });
 
-        // it('should allow using request events.', function (done) {
-        //     ntlmRemoteAuth.authenticate(testSettings.valid.url, "", testSettings.valid.domain, testSettings.valid.username, testSettings.valid.password)
-        //         .then(function (ctx) {
+        it('should return result in promise continuation', function (done) {
+            ntlmRemoteAuth.authenticate(testSettings.valid.url, "", testSettings.valid.domain, testSettings.valid.username, testSettings.valid.password)
+                .then(function (ctx) {
 
-        //             let docLibUrl = "Documents";
-        //             let fileName = "test2141.txt";
+                    let docLibUrl = "Documents";
+                    let fileName = "test2141.txt";
 
-        //             let uploadRequestPromise = ctx.request({
-        //                 method: "POST",
-        //                 url: URI.joinPaths("/_api/web/", `GetFolderByServerRelativeUrl('${URI.encode(docLibUrl)}')/`, "files/", `add(url='${URI.encode(fileName)}',overwrite=true)`).href(),
-        //                 body: "Hello, world!"
-        //             }).then(function (uploadRequest) {
-        //                 uploadRequest.body = "foo";
-        //                 uploadRequest.callback = function (res) {
-        //                     console.log("asdfasdfasdf");
-        //                 };
-        //                 uploadRequest.on("response", function () {
-        //                     called = true;
-        //                     console.log("asdf");
-        //                     done();
-        //                 }).on('data', function (data) {
-        //                     // decompressed data as it is received
-        //                     console.log('decoded chunk: ' + data)
-        //                 })
-        //                 console.log(typeof uploadRequest);
-        //             }).then(function(response) { console.log(response); done(); });
-        //         });
-        // });
+                    let uploadRequestPromise = ctx.request({
+                        method: "POST",
+                        url: URI.joinPaths("/_api/web/", `GetFolderByServerRelativeUrl('${URI.encode(docLibUrl)}')/`, "files/", `add(url='${URI.encode(fileName)}',overwrite=true)`).href(),
+                        body: "Hello, world!"
+                    }).then(function (response) {
+                        expect(response.statusCode).to.be.equal(200);
+                        expect(response.body.d.__metadata.type).to.equal("SP.File");
+                        done();
+                    });
+                });
+        });
     });
 });
